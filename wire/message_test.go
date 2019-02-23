@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
 )
 

@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
 )
 
 // Bip16Activation is the timestamp where BIP0016 is valid to use in the

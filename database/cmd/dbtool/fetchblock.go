@@ -9,8 +9,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/database"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/VIPSTARCOIN-electrum/vipsd/database"
 )
 
 // fetchBlockCmd defines the configuration options for the fetchblock command.

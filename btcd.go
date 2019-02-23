@@ -15,9 +15,9 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/btcsuite/btcd/blockchain/indexers"
-	"github.com/btcsuite/btcd/database"
-	"github.com/btcsuite/btcd/limits"
+	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain/indexers"
+	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/VIPSTARCOIN-electrum/vipsd/limits"
 )
 
 const (

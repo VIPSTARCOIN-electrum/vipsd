@@ -1,9 +1,9 @@
 btcd
 ====
 
-[![Build Status](https://travis-ci.org/btcsuite/btcd.png?branch=master)](https://travis-ci.org/btcsuite/btcd)
+[![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/btcsuite/btcd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd)
 
 btcd is an alternative full node bitcoin implementation written in Go (golang).
 
@@ -41,7 +41,7 @@ which are both under active development.
 
 #### Windows - MSI Available
 
-https://github.com/btcsuite/btcd/releases
+https://github.com/VIPSTARCOIN-electrum/vipsd/releases
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
@@ -63,7 +63,7 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 - Run the following commands to obtain btcd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/btcsuite/btcd
+$ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
 
@@ -82,7 +82,7 @@ Install a newer MSI
 - Run the following commands to update btcd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/btcsuite/btcd
+$ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
 $ git pull
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
@@ -111,12 +111,12 @@ $ ./btcd
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/btcsuite/btcd/issues)
+The [integrated github issue tracker](https://github.com/VIPSTARCOIN-electrum/vipsd/issues)
 is used for this project.
 
 ## Documentation
 
-The documentation is a work-in-progress.  It is located in the [docs](https://github.com/btcsuite/btcd/tree/master/docs) folder.
+The documentation is a work-in-progress.  It is located in the [docs](https://github.com/VIPSTARCOIN-electrum/vipsd/tree/master/docs) folder.
 
 ## GPG Verification Key
 
@@ -125,7 +125,7 @@ has not been tampered with and is coming from the btcsuite developers.  To
 verify the signature perform the following:
 
 - Download the Conformal public key:
-  https://raw.githubusercontent.com/btcsuite/btcd/master/release/GIT-GPG-KEY-conformal.txt
+  https://raw.githubusercontent.com/VIPSTARCOIN-electrum/vipsd/master/release/GIT-GPG-KEY-conformal.txt
 
 - Import the public key into your GPG keyring:
   ```bash

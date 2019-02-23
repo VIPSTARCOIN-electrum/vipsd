@@ -9,7 +9,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
 )
 
 // MaxBlockHeaderPayload is the maximum number of bytes a block header can be.
@@ -38,11 +38,23 @@ type BlockHeader struct {
 
 	// Nonce used to generate the block.
 	Nonce uint32
+
+	// StateRoot used to Smart Contract.(from Qtum)
+	StateRoot chainhash.Hash
+
+	// UTXORoot too.
+	UTXORoot chainhash.Hash
+
+	// prevoutN is PoW or PoS
+	prevoutN uint32
+
+	// prevoutStake is stake flag
+	prevoutStake chainhash.Hash
 }
 
 // blockHeaderLen is a constant that represents the number of bytes for a block
 // header.
-const blockHeaderLen = 80
+const blockHeaderLen = 180
 
 // BlockHash computes the block identifier hash for the given block header.
 func (h *BlockHeader) BlockHash() chainhash.Hash {

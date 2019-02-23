@@ -10,9 +10,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/peer"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
+	"github.com/VIPSTARCOIN-electrum/vipsd/peer"
+	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
 )
 
 // mockRemotePeer creates a basic inbound peer listening on the simnet port for

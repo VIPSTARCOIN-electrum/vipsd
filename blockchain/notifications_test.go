@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
 )
 
 // TestNotifications ensures that notification callbacks are fired on events.

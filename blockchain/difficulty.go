@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
+	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
 )
 
 var (
@@ -224,59 +224,68 @@ func (b *BlockChain) calcNextRequiredDifficulty(lastNode *blockNode, newBlockTim
 		return b.chainParams.PowLimitBits, nil
 	}
 
-	// Return the previous block's difficulty requirements if this block
-	// is not at a difficulty retarget interval.
-	if (lastNode.height+1)%b.blocksPerRetarget != 0 {
-		// For networks that support it, allow special reduction of the
-		// required difficulty once too much time has elapsed without
-		// mining a block.
-		if b.chainParams.ReduceMinDifficulty {
-			// Return minimum difficulty when more than the desired
-			// amount of time has elapsed without mining a block.
-			reductionTime := int64(b.chainParams.MinDiffReductionTime /
-				time.Second)
-			allowMinTime := lastNode.timestamp + reductionTime
-			if newBlockTime.Unix() > allowMinTime {
-				return b.chainParams.PowLimitBits, nil
-			}
-
-			// The block was mined within the desired timeframe, so
-			// return the difficulty for the last block which did
-			// not have the special minimum difficulty rule applied.
-			return b.findPrevTestNetDifficulty(lastNode), nil
-		}
-
-		// For the main network (or any unrecognized networks), simply
-		// return the previous block's difficulty requirements.
-		return lastNode.bits, nil
+	if b.chainParams.Name == "simnet" {
+		return b.chainParams.PowLimitBits, nil
+	}
+	if b.chainParams.Name == "regtest" {
+		return b.chainParams.PowLimitBits, nil
 	}
 
-	// Get the block node at the previous retarget (targetTimespan days
-	// worth of blocks).
-	firstNode := lastNode.RelativeAncestor(b.blocksPerRetarget - 1)
-	if firstNode == nil {
+	// DarkGravityWave3
+	// current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io
+	readNode := lastNode.RelativeAncestor(0) //last block
+	if readNode == nil {
 		return 0, AssertError("unable to obtain previous retarget block")
 	}
 
-	// Limit the amount of adjustment that can occur to the previous
-	// difficulty.
-	actualTimespan := lastNode.timestamp - firstNode.timestamp
-	adjustedTimespan := actualTimespan
-	if actualTimespan < b.minRetargetTimespan {
-		adjustedTimespan = b.minRetargetTimespan
-	} else if actualTimespan > b.maxRetargetTimespan {
-		adjustedTimespan = b.maxRetargetTimespan
+	LastBlockTime := int64(0)
+	nActualTimespan := int64(0)
+	Diff := int64(0)
+	CountBlocks := int64(0)
+	bnNum := big.NewInt(0)
+	PastDifficultyAverage := big.NewInt(0)
+	PastDifficultyAveragePrev := big.NewInt(0)
+
+	// loop over the past n blocks, where n == PastBlocksMax
+	for i := 1; i < 25; i++ {
+		CountBlocks++
+
+		// Calculate average difficulty based on the blocks we iterate over in this for loop
+		if CountBlocks <= 24 {
+			if CountBlocks == 1 {
+				PastDifficultyAverage = CompactToBig(readNode.bits)
+			} else {
+				bnNum = CompactToBig(readNode.bits)
+				PastDifficultyAverage = PastDifficultyAveragePrev.Mul(PastDifficultyAveragePrev, big.NewInt(CountBlocks)).Add(PastDifficultyAveragePrev, bnNum).Div(PastDifficultyAveragePrev, big.NewInt(CountBlocks+1))
+			}
+			PastDifficultyAveragePrev = PastDifficultyAverage
+		}
+
+		// If this is the second iteration (LastBlockTime was set)
+		if LastBlockTime > 0 {
+			// Calculate time difference between previous block and current block
+			Diff = (LastBlockTime - readNode.timestamp)
+			nActualTimespan += Diff
+		}
+		// Increment the actual timespan
+		LastBlockTime = readNode.timestamp
+
+		readNode = readNode.RelativeAncestor(1)
 	}
 
-	// Calculate new target difficulty as:
-	//  currentDifficulty * (adjustedTimespan / targetTimespan)
-	// The result uses integer division which means it will be slightly
-	// rounded down.  Bitcoind also uses integer division to calculate this
-	// result.
-	oldTarget := CompactToBig(lastNode.bits)
-	newTarget := new(big.Int).Mul(oldTarget, big.NewInt(adjustedTimespan))
-	targetTimeSpan := int64(b.chainParams.TargetTimespan / time.Second)
-	newTarget.Div(newTarget, big.NewInt(targetTimeSpan))
+	// Limit the re-adjustment to 3x or 0.33x
+	// We don't want to increase/decrease diff too much.
+	nTargetTimespan := CountBlocks * 90 // Monacoin: 1.5(60*1.5) minutes between block
+	if nActualTimespan < nTargetTimespan/3 {
+		nActualTimespan = nTargetTimespan / 3
+	} else if nActualTimespan > nTargetTimespan*3 {
+		nActualTimespan = nTargetTimespan * 3
+	}
+
+	// Calculate the new difficulty based on actual and target timespan.
+	oldTarget := PastDifficultyAverage
+	newTarget := new(big.Int).Mul(oldTarget, big.NewInt(nActualTimespan))
+	newTarget.Div(newTarget, big.NewInt(nTargetTimespan))
 
 	// Limit new value to the proof of work limit.
 	if newTarget.Cmp(b.chainParams.PowLimit) > 0 {
@@ -289,12 +298,11 @@ func (b *BlockChain) calcNextRequiredDifficulty(lastNode *blockNode, newBlockTim
 	// precision.
 	newTargetBits := BigToCompact(newTarget)
 	log.Debugf("Difficulty retarget at block height %d", lastNode.height+1)
-	log.Debugf("Old target %08x (%064x)", lastNode.bits, oldTarget)
+	log.Debugf("Old target %08x (%064x)", readNode.bits, oldTarget)
 	log.Debugf("New target %08x (%064x)", newTargetBits, CompactToBig(newTargetBits))
-	log.Debugf("Actual timespan %v, adjusted timespan %v, target timespan %v",
-		time.Duration(actualTimespan)*time.Second,
-		time.Duration(adjustedTimespan)*time.Second,
-		b.chainParams.TargetTimespan)
+	log.Debugf("Actual timespan %v, adjusted timespan %v",
+		time.Duration(nActualTimespan)*time.Second,
+		time.Duration(nTargetTimespan)*time.Second)
 
 	return newTargetBits, nil
 }
