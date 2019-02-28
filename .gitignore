@@ -2,7 +2,7 @@
 *~
 
 # Databases
-btcd.db
+vipsd.db
 *-shm
 *-wal
 

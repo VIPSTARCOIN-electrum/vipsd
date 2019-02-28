@@ -22,9 +22,9 @@ func TestVersion(t *testing.T) {
 
 	// Create version message data.
 	lastBlock := int32(234234)
-	tcpAddrMe := &net.TCPAddr{IP: net.ParseIP("127.0.0.1"), Port: 8333}
+	tcpAddrMe := &net.TCPAddr{IP: net.ParseIP("127.0.0.1"), Port: 31915}
 	me := NewNetAddress(tcpAddrMe, SFNodeNetwork)
-	tcpAddrYou := &net.TCPAddr{IP: net.ParseIP("192.168.0.1"), Port: 8333}
+	tcpAddrYou := &net.TCPAddr{IP: net.ParseIP("192.168.0.1"), Port: 31915}
 	you := NewNetAddress(tcpAddrYou, SFNodeNetwork)
 	nonce, err := RandomUint64()
 	if err != nil {
@@ -372,12 +372,12 @@ func TestVersionOptionalFields(t *testing.T) {
 	onlyRequiredVersion := MsgVersion{
 		ProtocolVersion: 60002,
 		Services:        SFNodeNetwork,
-		Timestamp:       time.Unix(0x495fab29, 0), // 2009-01-03 12:15:05 -0600 CST)
+		Timestamp:       time.Unix(0x5abcc045, 0), // 2018-03-29 10:30:29 +0000 UTC
 		AddrYou: NetAddress{
 			Timestamp: time.Time{}, // Zero value -- no timestamp in version
 			Services:  SFNodeNetwork,
 			IP:        net.ParseIP("192.168.0.1"),
-			Port:      8333,
+			Port:      31915,
 		},
 	}
 	onlyRequiredVersionEncoded := make([]byte, len(baseVersionEncoded)-55)
@@ -390,7 +390,7 @@ func TestVersionOptionalFields(t *testing.T) {
 		Timestamp: time.Time{}, // Zero value -- no timestamp in version
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("127.0.0.1"),
-		Port:      8333,
+		Port:      31915,
 	}
 	addrMeVersionEncoded := make([]byte, len(baseVersionEncoded)-29)
 	copy(addrMeVersionEncoded, baseVersionEncoded)
@@ -405,7 +405,7 @@ func TestVersionOptionalFields(t *testing.T) {
 	// uaVersion is a version message that contains all fields through
 	// the UserAgent field.
 	uaVersion := nonceVersion
-	uaVersion.UserAgent = "/btcdtest:0.0.1/"
+	uaVersion.UserAgent = "/vipstest:0.0.1/"
 	uaVersionEncoded := make([]byte, len(baseVersionEncoded)-4)
 	copy(uaVersionEncoded, baseVersionEncoded)
 
@@ -475,21 +475,21 @@ func TestVersionOptionalFields(t *testing.T) {
 var baseVersion = &MsgVersion{
 	ProtocolVersion: 60002,
 	Services:        SFNodeNetwork,
-	Timestamp:       time.Unix(0x495fab29, 0), // 2009-01-03 12:15:05 -0600 CST)
+	Timestamp:       time.Unix(0x5abcc045, 0), // 2018-03-29 10:30:29 +0000 UTC
 	AddrYou: NetAddress{
 		Timestamp: time.Time{}, // Zero value -- no timestamp in version
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("192.168.0.1"),
-		Port:      8333,
+		Port:      31915,
 	},
 	AddrMe: NetAddress{
 		Timestamp: time.Time{}, // Zero value -- no timestamp in version
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("127.0.0.1"),
-		Port:      8333,
+		Port:      31915,
 	},
 	Nonce:     123123, // 0x1e0f3
-	UserAgent: "/btcdtest:0.0.1/",
+	UserAgent: "/vipstest:0.0.1/",
 	LastBlock: 234234, // 0x392fa
 }
 
@@ -498,20 +498,20 @@ var baseVersion = &MsgVersion{
 var baseVersionEncoded = []byte{
 	0x62, 0xea, 0x00, 0x00, // Protocol version 60002
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
-	0x29, 0xab, 0x5f, 0x49, 0x00, 0x00, 0x00, 0x00, // 64-bit Timestamp
+	0x45, 0xc0, 0xbc, 0x5a, 0x00, 0x00, 0x00, 0x00, // 64-bit Timestamp
 	// AddrYou -- No timestamp for NetAddress in version message
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0xff, 0xff, 0xc0, 0xa8, 0x00, 0x01, // IP 192.168.0.1
-	0x20, 0x8d, // Port 8333 in big-endian
+	0x7c, 0xab, // Port 31915 in big-endian
 	// AddrMe -- No timestamp for NetAddress in version message
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01, // IP 127.0.0.1
-	0x20, 0x8d, // Port 8333 in big-endian
+	0x7c, 0xab, // Port 31915 in big-endian
 	0xf3, 0xe0, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, // Nonce
 	0x10, // Varint for user agent length
-	0x2f, 0x62, 0x74, 0x63, 0x64, 0x74, 0x65, 0x73,
+	0x2f, 0x76, 0x69, 0x70, 0x73, 0x74, 0x65, 0x73,
 	0x74, 0x3a, 0x30, 0x2e, 0x30, 0x2e, 0x31, 0x2f, // User agent
 	0xfa, 0x92, 0x03, 0x00, // Last block
 }
@@ -521,21 +521,21 @@ var baseVersionEncoded = []byte{
 var baseVersionBIP0037 = &MsgVersion{
 	ProtocolVersion: 70001,
 	Services:        SFNodeNetwork,
-	Timestamp:       time.Unix(0x495fab29, 0), // 2009-01-03 12:15:05 -0600 CST)
+	Timestamp:       time.Unix(0x5abcc045, 0), // 2018-03-29 10:30:29 +0000 UTC
 	AddrYou: NetAddress{
 		Timestamp: time.Time{}, // Zero value -- no timestamp in version
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("192.168.0.1"),
-		Port:      8333,
+		Port:      31915,
 	},
 	AddrMe: NetAddress{
 		Timestamp: time.Time{}, // Zero value -- no timestamp in version
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("127.0.0.1"),
-		Port:      8333,
+		Port:      31915,
 	},
 	Nonce:     123123, // 0x1e0f3
-	UserAgent: "/btcdtest:0.0.1/",
+	UserAgent: "/vipstest:0.0.1/",
 	LastBlock: 234234, // 0x392fa
 }
 
@@ -544,20 +544,20 @@ var baseVersionBIP0037 = &MsgVersion{
 var baseVersionBIP0037Encoded = []byte{
 	0x71, 0x11, 0x01, 0x00, // Protocol version 70001
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
-	0x29, 0xab, 0x5f, 0x49, 0x00, 0x00, 0x00, 0x00, // 64-bit Timestamp
+	0x45, 0xc0, 0xbc, 0x5a, 0x00, 0x00, 0x00, 0x00, // 64-bit Timestamp
 	// AddrYou -- No timestamp for NetAddress in version message
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0xff, 0xff, 0xc0, 0xa8, 0x00, 0x01, // IP 192.168.0.1
-	0x20, 0x8d, // Port 8333 in big-endian
+	0x7c, 0xab, // Port 31915 in big-endian
 	// AddrMe -- No timestamp for NetAddress in version message
 	0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 	0x00, 0x00, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01, // IP 127.0.0.1
-	0x20, 0x8d, // Port 8333 in big-endian
+	0x7c, 0xab, // Port 31915 in big-endian
 	0xf3, 0xe0, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, // Nonce
 	0x10, // Varint for user agent length
-	0x2f, 0x62, 0x74, 0x63, 0x64, 0x74, 0x65, 0x73,
+	0x2f, 0x76, 0x69, 0x70, 0x73, 0x74, 0x65, 0x73,
 	0x74, 0x3a, 0x30, 0x2e, 0x30, 0x2e, 0x31, 0x2f, // User agent
 	0xfa, 0x92, 0x03, 0x00, // Last block
 	0x01, // Relay tx

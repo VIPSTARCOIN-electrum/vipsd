@@ -31,14 +31,14 @@ func main() {
 		},
 	}
 
-	// Connect to local btcd RPC server using websockets.
-	btcdHomeDir := vipsutil.AppDataDir("btcd", false)
-	certs, err := ioutil.ReadFile(filepath.Join(btcdHomeDir, "rpc.cert"))
+	// Connect to local vipsd RPC server using websockets.
+	vipsdHomeDir := vipsutil.AppDataDir("vipsd false)
+	certs, err := ioutil.ReadFile(filepath.Join(vipsdHomeDir, "rpc.cert"))
 	if err != nil {
 		log.Fatal(err)
 	}
 	connCfg := &rpcclient.ConnConfig{
-		Host:         "localhost:8334",
+		Host:         "localhost:31914",
 		Endpoint:     "ws",
 		User:         "yourrpcuser",
 		Pass:         "yourrpcpass",

@@ -54,21 +54,21 @@ var (
 	// application shutdown.
 	logRotator *rotator.Rotator
 
-	adxrLog = backendLog.Logger("ADXR")
-	amgrLog = backendLog.Logger("AMGR")
-	cmgrLog = backendLog.Logger("CMGR")
-	bcdbLog = backendLog.Logger("BCDB")
-	btcdLog = backendLog.Logger("BTCD")
-	chanLog = backendLog.Logger("CHAN")
-	discLog = backendLog.Logger("DISC")
-	indxLog = backendLog.Logger("INDX")
-	minrLog = backendLog.Logger("MINR")
-	peerLog = backendLog.Logger("PEER")
-	rpcsLog = backendLog.Logger("RPCS")
-	scrpLog = backendLog.Logger("SCRP")
-	srvrLog = backendLog.Logger("SRVR")
-	syncLog = backendLog.Logger("SYNC")
-	txmpLog = backendLog.Logger("TXMP")
+	adxrLog  = backendLog.Logger("ADXR")
+	amgrLog  = backendLog.Logger("AMGR")
+	cmgrLog  = backendLog.Logger("CMGR")
+	bcdbLog  = backendLog.Logger("BCDB")
+	vipsdLog = backendLog.Logger("VIPSD")
+	chanLog  = backendLog.Logger("CHAN")
+	discLog  = backendLog.Logger("DISC")
+	indxLog  = backendLog.Logger("INDX")
+	minrLog  = backendLog.Logger("MINR")
+	peerLog  = backendLog.Logger("PEER")
+	rpcsLog  = backendLog.Logger("RPCS")
+	scrpLog  = backendLog.Logger("SCRP")
+	srvrLog  = backendLog.Logger("SRVR")
+	syncLog  = backendLog.Logger("SYNC")
+	txmpLog  = backendLog.Logger("TXMP")
 )
 
 // Initialize package-global logger variables.
@@ -88,21 +88,21 @@ func init() {
 
 // subsystemLoggers maps each subsystem identifier to its associated logger.
 var subsystemLoggers = map[string]btclog.Logger{
-	"ADXR": adxrLog,
-	"AMGR": amgrLog,
-	"CMGR": cmgrLog,
-	"BCDB": bcdbLog,
-	"BTCD": btcdLog,
-	"CHAN": chanLog,
-	"DISC": discLog,
-	"INDX": indxLog,
-	"MINR": minrLog,
-	"PEER": peerLog,
-	"RPCS": rpcsLog,
-	"SCRP": scrpLog,
-	"SRVR": srvrLog,
-	"SYNC": syncLog,
-	"TXMP": txmpLog,
+	"ADXR" : adxrLog,
+	"AMGR" : amgrLog,
+	"CMGR" : cmgrLog,
+	"BCDB" : bcdbLog,
+	"VIPSD": vipsdLog,
+	"CHAN" : chanLog,
+	"DISC" : discLog,
+	"INDX" : indxLog,
+	"MINR" : minrLog,
+	"PEER" : peerLog,
+	"RPCS" : rpcsLog,
+	"SCRP" : scrpLog,
+	"SRVR" : srvrLog,
+	"SYNC" : syncLog,
+	"TXMP" : txmpLog,
 }
 
 // initLogRotator initializes the logging rotater to write logs to logFile and

@@ -29,8 +29,8 @@ const (
 
 	// CoinbaseFlags is added to the coinbase script of a generated block
 	// and is used to monitor BIP16 support as well as blocks that are
-	// generated via btcd.
-	CoinbaseFlags = "/P2SH/btcd/"
+	// generated via vipsd.
+	CoinbaseFlags = "/P2SH/vipsd/"
 )
 
 // TxDesc is a descriptor about a transaction in a transaction source along with

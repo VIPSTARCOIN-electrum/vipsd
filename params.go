@@ -22,13 +22,13 @@ type params struct {
 
 // mainNetParams contains parameters specific to the main network
 // (wire.MainNet).  NOTE: The RPC port is intentionally different than the
-// reference implementation because btcd does not handle wallet requests.  The
+// reference implementation because vipsd does not handle wallet requests.  The
 // separate wallet process listens on the well-known port and forwards requests
-// it does not handle on to btcd.  This approach allows the wallet process
+// it does not handle on to vipsd.  This approach allows the wallet process
 // to emulate the full reference implementation RPC API.
 var mainNetParams = params{
 	Params:  &chaincfg.MainNetParams,
-	rpcPort: "8334",
+	rpcPort: "31914",
 }
 
 // regressionNetParams contains parameters specific to the regression test
@@ -37,7 +37,7 @@ var mainNetParams = params{
 // details.
 var regressionNetParams = params{
 	Params:  &chaincfg.RegressionNetParams,
-	rpcPort: "18334",
+	rpcPort: "32914",
 }
 
 // testNet3Params contains parameters specific to the test network (version 3)
@@ -45,7 +45,7 @@ var regressionNetParams = params{
 // reference implementation - see the mainNetParams comment for details.
 var testNet3Params = params{
 	Params:  &chaincfg.TestNet3Params,
-	rpcPort: "18334",
+	rpcPort: "32914",
 }
 
 // simNetParams contains parameters specific to the simulation test network
@@ -56,7 +56,7 @@ var simNetParams = params{
 }
 
 // netName returns the name used when referring to a bitcoin network.  At the
-// time of writing, btcd currently places blocks for testnet version 3 in the
+// time of writing, vipsd currently places blocks for testnet version 3 in the
 // data and log directory "testnet", which does not match the Name field of the
 // chaincfg parameters.  This function can be used to override this directory
 // name as "testnet" when the passed active network matches wire.TestNet3.

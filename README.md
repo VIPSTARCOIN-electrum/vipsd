@@ -1,18 +1,18 @@
-btcd
+vipsd
 ====
 
 [![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd)
 
-btcd is an alternative full node bitcoin implementation written in Go (golang).
+vipsd is an alternative full node bitcoin implementation written in Go (golang).
 
 This project is currently under active development and is in a Beta state.  It
 is extremely stable and has been in production use since October 2013.
 
 It properly downloads, validates, and serves the block chain using the exact
 rules (including consensus bugs) for block acceptance as Bitcoin Core.  We have
-taken great care to avoid btcd causing a fork to the block chain.  It includes a
+taken great care to avoid vipsd causing a fork to the block chain.  It includes a
 full block validation testing framework which contains all of the 'official'
 block acceptance tests (and some additional ones) that is run on every pull
 request to help ensure it properly follows consensus.  Also, it passes all of
@@ -24,11 +24,11 @@ ensures all individual transactions admitted to the pool follow the rules
 required by the block chain and also includes more strict checks which filter
 transactions based on miner requirements ("standard" transactions).
 
-One key difference between btcd and Bitcoin Core is that btcd does *NOT* include
+One key difference between vipsd and VIPSTARCOIN Core is that vipsd does *NOT* include
 wallet functionality and this was a very intentional design decision.  See the
-blog entry [here](https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon)
+blog entry [here](https://blog.conformal.com/vipsd-not-your-moms-bitcoin-daemon)
 for more details.  This means you can't actually make or receive payments
-directly with btcd.  That functionality is provided by the
+directly with vipsd.  That functionality is provided by the
 [btcwallet](https://github.com/btcsuite/btcwallet) and
 [Paymetheus](https://github.com/btcsuite/Paymetheus) (Windows-only) projects
 which are both under active development.
@@ -60,14 +60,14 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 `~/goprojects` to avoid write permission issues.  It is also recommended to add
 `$GOPATH/bin` to your `PATH` at this point.
 
-- Run the following commands to obtain btcd, all dependencies, and install it:
+- Run the following commands to obtain vipsd, all dependencies, and install it:
 
 ```bash
 $ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
 
-- btcd (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
+- vipsd (and utilities) will now be installed in ```$GOPATH/bin```.  If you did
   not already add the bin directory to your system path during Go installation,
   we recommend you do so now.
 
@@ -79,7 +79,7 @@ Install a newer MSI
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
-- Run the following commands to update btcd, all dependencies, and install it:
+- Run the following commands to update vipsd, all dependencies, and install it:
 
 ```bash
 $ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
@@ -89,25 +89,19 @@ $ GO111MODULE=on go install -v . ./cmd/...
 
 ## Getting Started
 
-btcd has several configuration options available to tweak how it runs, but all
+vipsd has several configuration options available to tweak how it runs, but all
 of the basic operations described in the intro section work with zero
 configuration.
 
 #### Windows (Installed from MSI)
 
-Launch btcd from your Start menu.
+Launch vipsd from your Start menu.
 
 #### Linux/BSD/POSIX/Source
 
 ```bash
-$ ./btcd
+$ ./vipsd
 ```
-
-## IRC
-
-- irc.freenode.net
-- channel #btcd
-- [webchat](https://webchat.freenode.net/?channels=btcd)
 
 ## Issue Tracker
 
@@ -140,4 +134,4 @@ verify the signature perform the following:
 
 ## License
 
-btcd is licensed under the [copyfree](http://copyfree.org) ISC License.
+vipsd is licensed under the [copyfree](http://copyfree.org) ISC License.

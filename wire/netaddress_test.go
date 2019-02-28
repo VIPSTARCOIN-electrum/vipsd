@@ -18,7 +18,7 @@ import (
 // TestNetAddress tests the NetAddress API.
 func TestNetAddress(t *testing.T) {
 	ip := net.ParseIP("127.0.0.1")
-	port := 8333
+	port := 31915
 
 	// Test NewNetAddress.
 	na := NewNetAddress(&net.TCPAddr{IP: ip, Port: port}, 0)
@@ -76,10 +76,10 @@ func TestNetAddress(t *testing.T) {
 func TestNetAddressWire(t *testing.T) {
 	// baseNetAddr is used in the various tests as a baseline NetAddress.
 	baseNetAddr := NetAddress{
-		Timestamp: time.Unix(0x495fab29, 0), // 2009-01-03 12:15:05 -0600 CST
+		Timestamp: time.Unix(0x5abcc045, 0), // 2018-03-29 10:30:29 +0000 UTC
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("127.0.0.1"),
-		Port:      8333,
+		Port:      31915,
 	}
 
 	// baseNetAddrNoTS is baseNetAddr with a zero value for the timestamp.
@@ -88,11 +88,11 @@ func TestNetAddressWire(t *testing.T) {
 
 	// baseNetAddrEncoded is the wire encoded bytes of baseNetAddr.
 	baseNetAddrEncoded := []byte{
-		0x29, 0xab, 0x5f, 0x49, // Timestamp
+		0x45, 0xc0, 0xbc, 0x5a, // Timestamp
 		0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // SFNodeNetwork
 		0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 		0x00, 0x00, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01, // IP 127.0.0.1
-		0x20, 0x8d, // Port 8333 in big-endian
+		0x7c, 0xab, // Port 31915 in big-endian
 	}
 
 	// baseNetAddrNoTSEncoded is the wire encoded bytes of baseNetAddrNoTS.
@@ -208,10 +208,10 @@ func TestNetAddressWireErrors(t *testing.T) {
 
 	// baseNetAddr is used in the various tests as a baseline NetAddress.
 	baseNetAddr := NetAddress{
-		Timestamp: time.Unix(0x495fab29, 0), // 2009-01-03 12:15:05 -0600 CST
+		Timestamp: time.Unix(0x5abcc045, 0), // 2018-03-29 10:30:29 +0000 UTC
 		Services:  SFNodeNetwork,
 		IP:        net.ParseIP("127.0.0.1"),
-		Port:      8333,
+		Port:      31915,
 	}
 
 	tests := []struct {
