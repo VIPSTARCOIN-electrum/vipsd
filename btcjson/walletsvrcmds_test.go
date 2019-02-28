@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // TestWalletSvrCmds tests all of the wallet server commands marshal and

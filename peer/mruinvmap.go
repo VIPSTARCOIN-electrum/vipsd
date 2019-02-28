@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // mruInventoryMap provides a concurrency safe map that is limited to a maximum

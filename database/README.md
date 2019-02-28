@@ -1,9 +1,9 @@
 database
 ========
 
-[![Build Status](http://img.shields.io/travis/VIPSTARCOIN-electrum/vipsd.svg)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](http://img.shields.io/travis/vipstar-dev/vipsd.svg)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd/database)
 
 Package database provides a block and metadata storage database.
 
@@ -13,8 +13,8 @@ one entity can have the database open at a time (for most database backends),
 and that entity will be vipsd.
 
 When a client wants programmatic access to the data provided by btcd, they'll
-likely want to use the [rpcclient](https://github.com/VIPSTARCOIN-electrum/vipsd/tree/master/rpcclient)
-package which makes use of the [JSON-RPC API](https://github.com/VIPSTARCOIN-electrum/vipsd/tree/master/docs/json_rpc_api.md).
+likely want to use the [rpcclient](https://github.com/vipstar-dev/vipsd/tree/master/rpcclient)
+package which makes use of the [JSON-RPC API](https://github.com/vipstar-dev/vipsd/tree/master/docs/json_rpc_api.md).
 
 However, this package could be extremely useful for any applications requiring
 Bitcoin block storage capabilities.
@@ -37,16 +37,16 @@ storage, and strict checksums in key areas to ensure data integrity.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/database
+$ go get -u github.com/vipstar-dev/vipsd/database
 ```
 
 ## Examples
 
-* [Basic Usage Example](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database#example-package--BasicUsage)  
+* [Basic Usage Example](http://godoc.org/github.com/vipstar-dev/vipsd/database#example-package--BasicUsage)  
   Demonstrates creating a new database and using a managed read-write
   transaction to store and retrieve metadata.
 
-* [Block Storage and Retrieval Example](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database#example-package--BlockStorageAndRetrieval)  
+* [Block Storage and Retrieval Example](http://godoc.org/github.com/vipstar-dev/vipsd/database#example-package--BlockStorageAndRetrieval)  
   Demonstrates creating a new database, using a managed read-write transaction
   to store a block, and then using a managed read-only transaction to fetch the
   block.

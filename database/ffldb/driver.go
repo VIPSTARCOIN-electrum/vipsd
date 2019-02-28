@@ -7,8 +7,8 @@ package ffldb
 import (
 	"fmt"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/database"
+	"github.com/vipstar-dev/vipsd/wire"
 	"github.com/btcsuite/btclog"
 )
 

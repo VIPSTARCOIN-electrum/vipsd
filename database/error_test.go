@@ -8,7 +8,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/vipstar-dev/vipsd/database"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

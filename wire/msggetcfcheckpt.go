@@ -7,7 +7,7 @@ package wire
 import (
 	"io"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // MsgGetCFCheckpt is a request for filter headers at evenly spaced intervals

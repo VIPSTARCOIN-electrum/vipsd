@@ -11,9 +11,9 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/blockchain"
+	"github.com/vipstar-dev/vipsd/database"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 var (

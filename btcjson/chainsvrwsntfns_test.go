@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // TestChainSvrWsNtfns tests all of the chain server websocket-specific

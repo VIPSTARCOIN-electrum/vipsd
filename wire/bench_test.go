@@ -13,7 +13,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

@@ -7,7 +7,7 @@ package rpcclient
 import (
 	"encoding/json"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // AddNodeCommand enumerates the available commands that the AddNode function

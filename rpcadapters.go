@@ -7,13 +7,13 @@ package main
 import (
 	"sync/atomic"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/mempool"
-	"github.com/VIPSTARCOIN-electrum/vipsd/netsync"
-	"github.com/VIPSTARCOIN-electrum/vipsd/peer"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/blockchain"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/mempool"
+	"github.com/vipstar-dev/vipsd/netsync"
+	"github.com/vipstar-dev/vipsd/peer"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // rpcPeer provides a peer for use with the RPC server and implements the

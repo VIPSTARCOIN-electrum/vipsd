@@ -5,8 +5,8 @@
 package mempool
 
 import (
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/blockchain"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // RuleError identifies a rule violation.  It is used to indicate that

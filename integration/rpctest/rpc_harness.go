@@ -15,11 +15,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/rpcclient"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/rpcclient"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 const (

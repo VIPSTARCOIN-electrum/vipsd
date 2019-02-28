@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

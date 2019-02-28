@@ -1,9 +1,9 @@
 ffldb
 =====
 
-[![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](https://travis-ci.org/vipstar-dev/vipsd.png?branch=master)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb?status.png)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb)
+[![GoDoc](https://godoc.org/github.com/vipstar-dev/vipsd/database/ffldb?status.png)](http://godoc.org/github.com/vipstar-dev/vipsd/database/ffldb)
 =======
 
 Package ffldb implements a driver for the database package that uses leveldb for

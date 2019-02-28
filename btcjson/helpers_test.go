@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // TestHelpers tests the various helper functions which create pointers to

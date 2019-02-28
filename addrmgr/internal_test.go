@@ -7,7 +7,7 @@ package addrmgr
 import (
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 func TstKnownAddressIsBad(ka *KnownAddress) bool {

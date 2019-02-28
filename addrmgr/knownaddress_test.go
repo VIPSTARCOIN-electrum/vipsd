@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/addrmgr"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/addrmgr"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 func TestChance(t *testing.T) {

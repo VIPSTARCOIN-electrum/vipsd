@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // TestThresholdStateStringer tests the stringized output for the

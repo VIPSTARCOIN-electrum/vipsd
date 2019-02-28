@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/txscript"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/txscript"
+	"github.com/vipstar-dev/vipsd/wire"
 	"github.com/btcsuite/btclog"
 )
 

@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/vipstar-dev/vipsd/database"
 	"github.com/btcsuite/btclog"
 	flags "github.com/jessevdk/go-flags"
 )

@@ -7,8 +7,8 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/database"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // maybeAcceptBlock potentially accepts a block into the block chain and, if

@@ -9,9 +9,9 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // FutureGenerateResult is a future promise to deliver the result of a

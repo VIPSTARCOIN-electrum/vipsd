@@ -16,9 +16,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/mining"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/mining"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // TODO incorporate Alex Morcos' modifications to Gavin's initial model

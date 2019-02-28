@@ -1,9 +1,9 @@
 connmgr
 =======
 
-[![Build Status](http://img.shields.io/travis/VIPSTARCOIN-electrum/vipsd.svg)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](http://img.shields.io/travis/vipstar-dev/vipsd.svg)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/connmgr)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd/connmgr)
 
 Package connmgr implements a generic Bitcoin network connection manager.
 
@@ -29,7 +29,7 @@ In addition the connection manager provides the following utilities:
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/connmgr
+$ go get -u github.com/vipstar-dev/vipsd/connmgr
 ```
 
 ## License

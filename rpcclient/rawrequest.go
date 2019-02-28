@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // FutureRawResult is a future promise to deliver the result of a RawRequest RPC

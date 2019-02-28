@@ -14,8 +14,8 @@ import (
 	"runtime"
 	"time"
 
-	rpc "github.com/VIPSTARCOIN-electrum/vipsd/rpcclient"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	rpc "github.com/vipstar-dev/vipsd/rpcclient"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // nodeConfig contains all the args, and data required to launch a vipsd process

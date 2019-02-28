@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // MsgGetHeaders implements the Message interface and represents a bitcoin

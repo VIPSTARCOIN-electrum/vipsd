@@ -9,7 +9,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // TestTxFeePrioHeap ensures the priority queue for transaction fees and

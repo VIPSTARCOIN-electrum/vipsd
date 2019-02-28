@@ -9,10 +9,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/vipstar-dev/vipsd/blockchain"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/database"
 )
 
 const blockDbNamePrefix = "blocks"

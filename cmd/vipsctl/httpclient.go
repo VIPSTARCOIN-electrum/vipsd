@@ -10,7 +10,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 	"github.com/btcsuite/go-socks/socks"
 )
 

@@ -14,8 +14,8 @@ import (
 	"runtime/debug"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/integration/rpctest"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/integration/rpctest"
 )
 
 func testGetBestBlock(r *rpctest.Harness, t *testing.T) {

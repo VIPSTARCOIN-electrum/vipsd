@@ -15,9 +15,9 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain/indexers"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	"github.com/VIPSTARCOIN-electrum/vipsd/limits"
+	"github.com/vipstar-dev/vipsd/blockchain/indexers"
+	"github.com/vipstar-dev/vipsd/database"
+	"github.com/vipstar-dev/vipsd/limits"
 )
 
 const (

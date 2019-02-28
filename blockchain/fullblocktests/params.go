@@ -9,9 +9,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // newHashFromStr converts the passed big-endian hex string into a

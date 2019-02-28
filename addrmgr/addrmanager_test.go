@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/addrmgr"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/addrmgr"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // naTest is used to describe a test to be performed against the NetAddressKey

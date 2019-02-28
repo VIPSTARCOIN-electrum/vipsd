@@ -7,14 +7,14 @@ package indexers
 import (
 	"errors"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/blockchain"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
-	"github.com/VIPSTARCOIN-electrum/vipsutil/gcs"
-	"github.com/VIPSTARCOIN-electrum/vipsutil/gcs/builder"
+	"github.com/vipstar-dev/vipsd/blockchain"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/database"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
+	"github.com/vipstar-dev/vipsutil/gcs"
+	"github.com/vipstar-dev/vipsutil/gcs/builder"
 )
 
 const (

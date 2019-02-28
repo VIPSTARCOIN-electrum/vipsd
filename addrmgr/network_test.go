@@ -8,8 +8,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/addrmgr"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/addrmgr"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

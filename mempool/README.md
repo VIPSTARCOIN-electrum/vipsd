@@ -1,9 +1,9 @@
 mempool
 =======
 
-[![Build Status](http://img.shields.io/travis/VIPSTARCOIN-electrum/vipsd.svg)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](http://img.shields.io/travis/vipstar-dev/vipsd.svg)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/mempool)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd/mempool)
 
 Package mempool provides a policy-enforced pool of unmined bitcoin transactions.
 
@@ -74,7 +74,7 @@ be an exhaustive list.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/mempool
+$ go get -u github.com/vipstar-dev/vipsd/mempool
 ```
 
 ## License

@@ -8,8 +8,8 @@
 package database
 
 import (
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // Cursor represents a cursor over key/value pairs and nested buckets of a

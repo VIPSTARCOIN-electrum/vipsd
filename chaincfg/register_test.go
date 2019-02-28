@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
+	. "github.com/vipstar-dev/vipsd/chaincfg"
 )
 
 // Define some of the required parameters for a user-registered

@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // testNoncePrng provides a deterministic prng for the nonce in generated fake

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/wire"
 	"github.com/davecgh/go-spew/spew"
 )
 

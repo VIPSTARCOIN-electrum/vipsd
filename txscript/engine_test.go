@@ -7,8 +7,8 @@ package txscript
 import (
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step()

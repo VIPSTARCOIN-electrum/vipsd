@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // TestMerkle tests the BuildMerkleTreeStore API.

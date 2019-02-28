@@ -1,9 +1,9 @@
 chaincfg
 ========
 
-[![Build Status](http://img.shields.io/travis/VIPSTARCOIN-electrum/vipsd.svg)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](http://img.shields.io/travis/vipstar-dev/vipsd.svg)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/chaincfg)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the three standard
 Bitcoin networks and provides the ability for callers to define their own custom
@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")
@@ -56,7 +56,7 @@ func main() {
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/chaincfg
+$ go get -u github.com/vipstar-dev/vipsd/chaincfg
 ```
 
 ## GPG Verification Key

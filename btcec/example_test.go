@@ -8,8 +8,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcec"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/btcec"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // This example demonstrates signing a message with a secp256k1 private key that

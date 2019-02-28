@@ -5,8 +5,8 @@
 package blockchain
 
 import (
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcec"
-	"github.com/VIPSTARCOIN-electrum/vipsd/txscript"
+	"github.com/vipstar-dev/vipsd/btcec"
+	"github.com/vipstar-dev/vipsd/txscript"
 )
 
 // -----------------------------------------------------------------------------

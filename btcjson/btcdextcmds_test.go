@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // TestBtcdExtCmds tests all of the vipsd extended commands marshal and unmarshal

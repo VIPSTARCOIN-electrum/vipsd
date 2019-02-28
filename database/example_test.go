@@ -10,11 +10,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	_ "github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/database"
+	_ "github.com/vipstar-dev/vipsd/database/ffldb"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // This example demonstrates creating a new database.
@@ -22,8 +22,8 @@ func ExampleCreate() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	// 	_ "github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb"
+	// 	"github.com/vipstar-dev/vipsd/database"
+	// 	_ "github.com/vipstar-dev/vipsd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -48,8 +48,8 @@ func Example_basicUsage() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	// 	_ "github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb"
+	// 	"github.com/vipstar-dev/vipsd/database"
+	// 	_ "github.com/vipstar-dev/vipsd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -114,8 +114,8 @@ func Example_blockStorageAndRetrieval() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	// 	_ "github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb"
+	// 	"github.com/vipstar-dev/vipsd/database"
+	// 	_ "github.com/vipstar-dev/vipsd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.

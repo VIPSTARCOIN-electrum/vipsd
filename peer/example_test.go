@@ -10,9 +10,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/peer"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/peer"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // mockRemotePeer creates a basic inbound peer listening on the simnet port for

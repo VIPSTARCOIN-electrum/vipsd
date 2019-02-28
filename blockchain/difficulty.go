@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 var (

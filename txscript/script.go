@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // Bip16Activation is the timestamp where BIP0016 is valid to use in the

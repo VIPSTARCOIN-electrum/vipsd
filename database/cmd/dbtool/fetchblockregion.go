@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/database"
 )
 
 // blockRegionCmd defines the configuration options for the fetchblockregion

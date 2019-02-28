@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/rpcclient"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/rpcclient"
 )
 
 // JoinType is an enum representing a particular type of "node join". A node

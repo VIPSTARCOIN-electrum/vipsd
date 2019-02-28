@@ -49,7 +49,7 @@ func vipsdExecutablePath() (string, error) {
 		outputPath += ".exe"
 	}
 	cmd := exec.Command(
-		"go", "build", "-o", outputPath, "github.com/VIPSTARCOIN-electrum/vipsd",
+		"go", "build", "-o", outputPath, "github.com/vipstar-dev/vipsd",
 	)
 	err = cmd.Run()
 	if err != nil {

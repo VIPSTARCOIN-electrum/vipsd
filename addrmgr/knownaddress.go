@@ -7,7 +7,7 @@ package addrmgr
 import (
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // KnownAddress tracks information about a known network address that is used

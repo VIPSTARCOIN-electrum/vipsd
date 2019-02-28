@@ -25,8 +25,8 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/VIPSTARCOIN-electrum/vipsutil"
-//          "github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
+//          "github.com/vipstar-dev/vipsutil"
+//          "github.com/vipstar-dev/vipsd/chaincfg"
 //  )
 //
 //  var testnet = flag.Bool("testnet", false, "operate on the testnet Bitcoin network")

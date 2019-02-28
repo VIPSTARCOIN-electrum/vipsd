@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsutil"
 	flags "github.com/jessevdk/go-flags"
 )
 

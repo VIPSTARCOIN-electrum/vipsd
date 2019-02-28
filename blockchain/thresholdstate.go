@@ -7,7 +7,7 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // ThresholdState define the various threshold states used when voting on

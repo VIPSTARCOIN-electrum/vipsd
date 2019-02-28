@@ -7,8 +7,8 @@ package txscript
 import (
 	"sync"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcec"
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/btcec"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
 )
 
 // sigCacheEntry represents an entry in the SigCache. Entries within the

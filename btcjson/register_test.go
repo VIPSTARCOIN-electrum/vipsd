@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // TestUsageFlagStringer tests the stringized output for the UsageFlag type.

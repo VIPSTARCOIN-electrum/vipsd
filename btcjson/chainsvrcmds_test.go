@@ -11,8 +11,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // TestChainSvrCmds tests all of the chain server commands marshal and unmarshal

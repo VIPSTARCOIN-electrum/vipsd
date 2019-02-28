@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database/internal/treap"
+	"github.com/vipstar-dev/vipsd/database/internal/treap"
 	"github.com/btcsuite/goleveldb/leveldb"
 	"github.com/btcsuite/goleveldb/leveldb/iterator"
 	"github.com/btcsuite/goleveldb/leveldb/util"

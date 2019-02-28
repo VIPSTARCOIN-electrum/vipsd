@@ -1,9 +1,9 @@
 wire
 ====
 
-[![Build Status](http://img.shields.io/travis/VIPSTARCOIN-electrum/vipsd.svg)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](http://img.shields.io/travis/vipstar-dev/vipsd.svg)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/wire)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd/wire)
 =======
 
 Package wire implements the bitcoin wire protocol.  A comprehensive suite of
@@ -19,7 +19,7 @@ protocol level.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/wire
+$ go get -u github.com/vipstar-dev/vipsd/wire
 ```
 
 ## Bitcoin Message Overview

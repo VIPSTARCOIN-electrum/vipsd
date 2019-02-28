@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsd/btcjson"
 )
 
 // helpDescsEnUS defines the English descriptions used for the help strings.

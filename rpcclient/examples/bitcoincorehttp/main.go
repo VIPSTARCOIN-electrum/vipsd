@@ -7,7 +7,7 @@ package main
 import (
 	"log"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/rpcclient"
+	"github.com/vipstar-dev/vipsd/rpcclient"
 )
 
 func main() {

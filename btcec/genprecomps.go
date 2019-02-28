@@ -17,7 +17,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcec"
+	"github.com/vipstar-dev/vipsd/btcec"
 )
 
 func main() {

@@ -9,8 +9,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/database"
 )
 
 // fetchBlockCmd defines the configuration options for the fetchblock command.

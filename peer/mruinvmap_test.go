@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg/chainhash"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg/chainhash"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // TestMruInventoryMap ensures the MruInventoryMap behaves as expected including

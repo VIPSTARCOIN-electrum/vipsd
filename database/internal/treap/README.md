@@ -1,9 +1,9 @@
 treap
 =====
 
-[![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](https://travis-ci.org/vipstar-dev/vipsd.png?branch=master)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database/internal/treap?status.png)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/database/internal/treap)
+[![GoDoc](https://godoc.org/github.com/vipstar-dev/vipsd/database/internal/treap?status.png)](http://godoc.org/github.com/vipstar-dev/vipsd/database/internal/treap)
 
 Package treap implements a treap data structure that is used to hold ordered
 key/value pairs using a combination of binary search tree and heap semantics.

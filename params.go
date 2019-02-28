@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
+	"github.com/vipstar-dev/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the

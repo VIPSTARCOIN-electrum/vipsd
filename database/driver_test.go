@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/database"
-	_ "github.com/VIPSTARCOIN-electrum/vipsd/database/ffldb"
+	"github.com/vipstar-dev/vipsd/database"
+	_ "github.com/vipstar-dev/vipsd/database/ffldb"
 )
 
 var (

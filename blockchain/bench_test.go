@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // BenchmarkIsCoinBase performs a simple benchmark against the IsCoinBase

@@ -9,7 +9,7 @@ Overview
 
 This client provides a robust and easy to use client for interfacing with a
 VIPSTARCOIN RPC server that uses a vipsd/bitcoin core compatible Bitcoin JSON-RPC
-API.  This client has been tested with vipsd (https://github.com/VIPSTARCOIN-electrum/vipsd),
+API.  This client has been tested with vipsd (https://github.com/vipstar-dev/vipsd),
 btcwallet (https://github.com/btcsuite/btcwallet), and
 bitcoin core (https://github.com/bitcoin).
 

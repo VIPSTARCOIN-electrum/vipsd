@@ -10,9 +10,9 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/txscript"
-	"github.com/VIPSTARCOIN-electrum/vipsd/wire"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/txscript"
+	"github.com/vipstar-dev/vipsd/wire"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // txValidateItem holds a transaction along with which input to validate.

@@ -7,7 +7,7 @@ package blockchain
 import (
 	"math"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/chaincfg"
+	"github.com/vipstar-dev/vipsd/chaincfg"
 )
 
 const (

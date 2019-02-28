@@ -1,9 +1,9 @@
 vipsd
 ====
 
-[![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](https://travis-ci.org/vipstar-dev/vipsd.png?branch=master)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/vipstar-dev/vipsd)
 
 vipsd is an alternative full node bitcoin implementation written in Go (golang).
 
@@ -41,7 +41,7 @@ which are both under active development.
 
 #### Windows - MSI Available
 
-https://github.com/VIPSTARCOIN-electrum/vipsd/releases
+https://github.com/vipstar-dev/vipsd/releases
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
@@ -63,7 +63,7 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 - Run the following commands to obtain vipsd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
+$ cd $GOPATH/src/github.com/vipstar-dev/vipsd
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
 
@@ -82,7 +82,7 @@ Install a newer MSI
 - Run the following commands to update vipsd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/VIPSTARCOIN-electrum/vipsd
+$ cd $GOPATH/src/github.com/vipstar-dev/vipsd
 $ git pull
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
@@ -105,12 +105,12 @@ $ ./vipsd
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/VIPSTARCOIN-electrum/vipsd/issues)
+The [integrated github issue tracker](https://github.com/vipstar-dev/vipsd/issues)
 is used for this project.
 
 ## Documentation
 
-The documentation is a work-in-progress.  It is located in the [docs](https://github.com/VIPSTARCOIN-electrum/vipsd/tree/master/docs) folder.
+The documentation is a work-in-progress.  It is located in the [docs](https://github.com/vipstar-dev/vipsd/tree/master/docs) folder.
 
 ## GPG Verification Key
 
@@ -119,7 +119,7 @@ has not been tampered with and is coming from the btcsuite developers.  To
 verify the signature perform the following:
 
 - Download the Conformal public key:
-  https://raw.githubusercontent.com/VIPSTARCOIN-electrum/vipsd/master/release/GIT-GPG-KEY-conformal.txt
+  https://raw.githubusercontent.com/vipstar-dev/vipsd/master/release/GIT-GPG-KEY-conformal.txt
 
 - Import the public key into your GPG keyring:
   ```bash

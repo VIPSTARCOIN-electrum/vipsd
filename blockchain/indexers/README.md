@@ -1,9 +1,9 @@
 indexers
 ========
 
-[![Build Status](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd.png?branch=master)](https://travis-ci.org/VIPSTARCOIN-electrum/vipsd)
+[![Build Status](https://travis-ci.org/vipstar-dev/vipsd.png?branch=master)](https://travis-ci.org/vipstar-dev/vipsd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/blockchain/indexers?status.png)](http://godoc.org/github.com/VIPSTARCOIN-electrum/vipsd/blockchain/indexers)
+[![GoDoc](https://godoc.org/github.com/vipstar-dev/vipsd/blockchain/indexers?status.png)](http://godoc.org/github.com/vipstar-dev/vipsd/blockchain/indexers)
 
 Package indexers implements optional block chain indexes.
 
@@ -23,7 +23,7 @@ via an RPC interface.
 ## Installation
 
 ```bash
-$ go get -u github.com/VIPSTARCOIN-electrum/vipsd/blockchain/indexers
+$ go get -u github.com/vipstar-dev/vipsd/blockchain/indexers
 ```
 
 ## License

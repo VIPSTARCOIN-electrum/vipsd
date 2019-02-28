@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/btcjson"
-	"github.com/VIPSTARCOIN-electrum/vipsutil"
+	"github.com/vipstar-dev/vipsd/btcjson"
+	"github.com/vipstar-dev/vipsutil"
 	flags "github.com/jessevdk/go-flags"
 )
 

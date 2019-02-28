@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/VIPSTARCOIN-electrum/vipsd/txscript"
+	"github.com/vipstar-dev/vipsd/txscript"
 )
 
 // TestCheckBlockScripts ensures that validating the all of the scripts in a
