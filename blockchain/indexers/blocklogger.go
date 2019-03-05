@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/btcsuite/btclog"
-	"github.com/btcsuite/vipsutil"
+	"github.com/vipstar-dev/vipsutil"
 )
 
 // blockProgressLogger provides periodic logging for other services in order
