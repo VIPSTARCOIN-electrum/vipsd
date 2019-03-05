@@ -26,8 +26,6 @@ github.com/kkdai/bstream v0.0.0-20161212061736-f391b8402d23/go.mod h1:J+Gs4SYgM6
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/ginkgo v1.7.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/gomega v1.4.3/go.mod h1:ex+gbHU/CVuBBDIJjb2X0qEXbFg53c61hWP/1CpauHY=
-github.com/vipstar-dev/vipsd v0.0.0-20190305131033-4823230c0048 h1:3RgYSnhZhC5q5KnR6nkfqVMbZTJzmS0GnP79J9Fuj8M=
-github.com/vipstar-dev/vipsd v0.0.0-20190305131033-4823230c0048/go.mod h1:j5zJa5ReV/xUNEgCOVhhueQcXEvyYYP5I7xZJiJ84Ks=
 github.com/vipstar-dev/vipsutil v0.0.0-20190207003914-4c204d697803/go.mod h1:n5E6s5Z4/mDiHa+F/0J8S+iYXCutaFeTGocRyItBL/w=
 github.com/vipstar-dev/vipsutil v0.0.0-20190228101913-ca1b1c32c299 h1:U/oZN1CsHPFN74L0r90EaNLznh5S3POjYswDMYCeffI=
 github.com/vipstar-dev/vipsutil v0.0.0-20190228101913-ca1b1c32c299/go.mod h1:n5E6s5Z4/mDiHa+F/0J8S+iYXCutaFeTGocRyItBL/w=

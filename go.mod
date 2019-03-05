@@ -6,7 +6,6 @@ require (
         github.com/btcsuite/websocket v0.0.0-20150119174127-31079b680792
         github.com/jessevdk/go-flags v1.4.0
         github.com/jrick/logrotate v1.0.0
-        github.com/vipstar-dev/vipsd v0.0.0-20190305131033-4823230c0048
         github.com/vipstar-dev/vipsutil v0.0.0-20190228101913-ca1b1c32c299
         golang.org/x/crypto v0.0.0-20190228161510-8dd112bcdc25
 )
