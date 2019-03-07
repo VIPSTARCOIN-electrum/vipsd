@@ -46,10 +46,10 @@ type BlockHeader struct {
 	UTXORoot chainhash.Hash
 
 	// prevoutN is PoW or PoS
-	prevoutN uint32
+	PrevoutN uint32
 
 	// prevoutStake is stake flag
-	prevoutStake chainhash.Hash
+	PrevoutStake chainhash.Hash
 }
 
 // blockHeaderLen is a constant that represents the number of bytes for a block
@@ -108,21 +108,21 @@ func (h *BlockHeader) Serialize(w io.Writer) error {
 // block hash, merkle root hash, difficulty bits, and nonce used to generate the
 // block with defaults for the remaining fields.
 func NewBlockHeader(version int32, prevHash, merkleRootHash *chainhash.Hash,bits uint32,
-    nonce uint32, stateRoot, utxoRoot *chainhash.Hash, prevN int32, prevStake *chainhash.Hash) *BlockHeader {
+    nonce uint32, stateRoot, utxoRoot *chainhash.Hash, prevN uint32, prevStake *chainhash.Hash) *BlockHeader {
 
 	// Limit the timestamp to one second precision since the protocol
 	// doesn't support better.
 	return &BlockHeader{
-		Version:    version,
-		PrevBlock:  *prevHash,
-		MerkleRoot: *merkleRootHash,
-		Timestamp:  time.Unix(time.Now().Unix(), 0),
-		Bits:       bits,
-		Nonce:      nonce,
-		StateRoot:  *stateRoot,
-		UTXORoot:   *utxoRoot,
-		PrevN:      prevN,
-		PrevStake:  *prevStake,
+		Version:      version,
+		PrevBlock:    *prevHash,
+		MerkleRoot:   *merkleRootHash,
+		Timestamp:    time.Unix(time.Now().Unix(), 0),
+		Bits:         bits,
+		Nonce:        nonce,
+		StateRoot:    *stateRoot,
+		UTXORoot:     *utxoRoot,
+		PrevoutN:     prevN,
+		PrevoutStake: *prevStake,
 	}
 }
 
