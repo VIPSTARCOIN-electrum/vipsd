@@ -272,12 +272,12 @@ var MainNetParams = Params{
 		DeploymentCSV: {
 			BitNumber:  0,
 			StartTime:  0,
-			ExpireTime: 999999999999ULL,
+			ExpireTime: 999999999999,
 		},
 		DeploymentSegwit: {
 			BitNumber:  1,
 			StartTime:  0,
-			ExpireTime: 999999999999ULL,
+			ExpireTime: 999999999999,
 		},
 	},
 
